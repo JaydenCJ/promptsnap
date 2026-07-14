@@ -2,7 +2,7 @@
   "name": "promptsnap",
   "version": "0.1.0",
   "description": "Snapshot testing for prompt templates: render with fixtures, diff the exact final message arrays. Offline, deterministic, zero LLM calls.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
