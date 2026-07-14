@@ -1,0 +1,12 @@
+{
+  "minor-release": {
+    "repo": "acme/cloud-api",
+    "version": "v2.7.0",
+    "prs": [
+      { "number": 481, "title": "Add per-key rate limits" },
+      { "number": 490, "title": "Fix cursor pagination on /events" },
+      { "number": 502, "title": "Drop legacy v1 auth endpoint", "breaking": true }
+    ],
+    "config": { "sections": ["Added", "Fixed", "Breaking"], "linkPRs": true }
+  }
+}

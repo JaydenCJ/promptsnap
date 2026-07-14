@@ -1,0 +1,53 @@
+{
+  "name": "promptsnap",
+  "version": "0.1.0",
+  "description": "Snapshot testing for prompt templates: render with fixtures, diff the exact final message arrays. Offline, deterministic, zero LLM calls.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "promptsnap": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "snapshot-testing",
+    "prompt-engineering",
+    "prompt-templates",
+    "llm",
+    "testing",
+    "diff",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/promptsnap.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/promptsnap#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/promptsnap/issues"
+  }
+}

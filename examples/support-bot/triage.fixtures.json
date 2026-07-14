@@ -1,0 +1,21 @@
+{
+  "vip-outage": {
+    "product": { "name": "Acme Cloud" },
+    "queues": ["billing", "outage", "how-to"],
+    "customer": { "vip": true, "plan": "enterprise" },
+    "ticket": {
+      "subject": "Dashboard down for our whole team",
+      "body": "Nothing loads since 09:00 UTC. Status page says green.",
+      "attachments": ["har-capture.har", "screenshot.png"]
+    }
+  },
+  "free-question": {
+    "product": { "name": "Acme Cloud" },
+    "queues": ["billing", "outage", "how-to"],
+    "customer": { "vip": false },
+    "ticket": {
+      "subject": "Export to CSV?",
+      "body": "Is there a way to export my dashboards to CSV?"
+    }
+  }
+}

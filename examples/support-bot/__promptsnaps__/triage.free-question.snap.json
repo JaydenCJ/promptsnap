@@ -1,0 +1,23 @@
+{
+  "promptsnap": 1,
+  "template": "triage.prompt",
+  "fixture": "free-question",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are the ticket-triage agent for Acme Cloud.\nRoute every ticket to exactly one queue: billing, outage, how-to.\nReply with the queue name on the first line and a one-sentence reason on the second."
+    },
+    {
+      "role": "user",
+      "content": "Refund for double charge on invoice 1042?"
+    },
+    {
+      "role": "assistant",
+      "content": "billing\nThe ticket is about a payment, not product behavior."
+    },
+    {
+      "role": "user",
+      "content": "Export to CSV?\n\nIs there a way to export my dashboards to CSV?"
+    }
+  ]
+}

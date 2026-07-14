@@ -1,0 +1,23 @@
+{
+  "promptsnap": 1,
+  "template": "triage.prompt",
+  "fixture": "vip-outage",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are the ticket-triage agent for Acme Cloud.\nRoute every ticket to exactly one queue: billing, outage, how-to.\nReply with the queue name on the first line and a one-sentence reason on the second.\nThis customer is on the ENTERPRISE plan. When a ticket is ambiguous, prefer the queue with the fastest human response."
+    },
+    {
+      "role": "user",
+      "content": "Refund for double charge on invoice 1042?"
+    },
+    {
+      "role": "assistant",
+      "content": "billing\nThe ticket is about a payment, not product behavior."
+    },
+    {
+      "role": "user",
+      "content": "Dashboard down for our whole team\n\nNothing loads since 09:00 UTC. Status page says green.\nAttachments:\n- har-capture.har\n- screenshot.png"
+    }
+  ]
+}

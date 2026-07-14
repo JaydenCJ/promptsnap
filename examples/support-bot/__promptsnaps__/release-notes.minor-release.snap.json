@@ -1,0 +1,15 @@
+{
+  "promptsnap": 1,
+  "template": "release-notes.prompt",
+  "fixture": "minor-release",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You write release notes for acme/cloud-api.\nAudience: end users. Keep entries under 20 words each.\nNever mention internal ticket IDs."
+    },
+    {
+      "role": "user",
+      "content": "Write the release notes for v2.7.0 from these merged pull requests:\n- #481 Add per-key rate limits\n- #490 Fix cursor pagination on /events\n- #502 Drop legacy v1 auth endpoint (BREAKING)\n\nRaw changelog config:\n{\n  \"sections\": [\n    \"Added\",\n    \"Fixed\",\n    \"Breaking\"\n  ],\n  \"linkPRs\": true\n}"
+    }
+  ]
+}
